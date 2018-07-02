@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace XamFilm.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainViewDetail : ContentPage
+    public partial class HomeView : TabbedPage
     {
-        public MainViewDetail()
+        public HomeView()
         {
             InitializeComponent();
         }

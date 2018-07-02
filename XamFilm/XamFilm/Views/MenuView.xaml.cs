@@ -13,11 +13,11 @@ using Xamarin.Forms.Xaml;
 namespace XamFilm.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainViewMaster : ContentPage
+    public partial class MenuView : ContentPage
     {
         public ListView ListView;
 
-        public MainViewMaster()
+        public MenuView()
         {
             InitializeComponent();
 
