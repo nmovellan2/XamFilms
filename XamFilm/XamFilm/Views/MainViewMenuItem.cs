@@ -11,7 +11,7 @@ namespace XamFilm.Views
     {
         public MainViewMenuItem()
         {
-            TargetType = typeof(MainViewDetail);
+            TargetType = typeof(HomeView);
         }
         public int Id { get; set; }
         public string Title { get; set; }

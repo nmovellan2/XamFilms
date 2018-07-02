@@ -4,7 +4,7 @@
              x:Class="XamFilm.Views.MainView"
              xmlns:pages="clr-namespace:XamFilm.Views">
   <MasterDetailPage.Master>
-    <pages:MainView x:Name="MasterPage" />
+    <pages:MenuView x:Name="MasterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
     <NavigationPage>
