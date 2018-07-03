@@ -21,36 +21,36 @@ namespace XamFilm.Views
         {
             InitializeComponent();
 
-            BindingContext = new MainViewMasterViewModel();
-            ListView = MenuItemsListView;
+            //BindingContext = new MainViewMasterViewModel();
+            //ListView = MenuItemsListView;
         }
 
-        class MainViewMasterViewModel : INotifyPropertyChanged
-        {
-            public ObservableCollection<MainViewMenuItem> MenuItems { get; set; }
+        //class MainViewMasterViewModel : INotifyPropertyChanged
+        //{
+        //    public ObservableCollection<MainViewMenuItem> MenuItems { get; set; }
             
-            public MainViewMasterViewModel()
-            {
-                MenuItems = new ObservableCollection<MainViewMenuItem>(new[]
-                {
-                    new MainViewMenuItem { Id = 0, Title = "Page 1" },
-                    new MainViewMenuItem { Id = 1, Title = "Page 2" },
-                    new MainViewMenuItem { Id = 2, Title = "Page 3" },
-                    new MainViewMenuItem { Id = 3, Title = "Page 4" },
-                    new MainViewMenuItem { Id = 4, Title = "Page 5" },
-                });
-            }
+        //    public MainViewMasterViewModel()
+        //    {
+        //        MenuItems = new ObservableCollection<MainViewMenuItem>(new[]
+        //        {
+        //            new MainViewMenuItem { Id = 0, Title = "Page 1" },
+        //            new MainViewMenuItem { Id = 1, Title = "Page 2" },
+        //            new MainViewMenuItem { Id = 2, Title = "Page 3" },
+        //            new MainViewMenuItem { Id = 3, Title = "Page 4" },
+        //            new MainViewMenuItem { Id = 4, Title = "Page 5" },
+        //        });
+        //    }
             
-            #region INotifyPropertyChanged Implementation
-            public event PropertyChangedEventHandler PropertyChanged;
-            void OnPropertyChanged([CallerMemberName] string propertyName = "")
-            {
-                if (PropertyChanged == null)
-                    return;
+        //    #region INotifyPropertyChanged Implementation
+        //    public event PropertyChangedEventHandler PropertyChanged;
+        //    void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        //    {
+        //        if (PropertyChanged == null)
+        //            return;
 
-                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            }
-            #endregion
-        }
+        //        PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        //    }
+        //    #endregion
+        //}
     }
 }

@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamFilm.Views.LoginView">
+             x:Class="XamFilm.Views.LoginView" Padding="30">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="XamaFilm.pngXama" x:Name="imgLogo"></Image>
+            <Label Text="XamaFilm" x:Name="lblTextLogo" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" TextColor="Blue" Font=""/>
+            <StackLayout x:Name="ContenedorFormulario" Padding="20">
+                <Label Text="Username" x:Name="lblUsername"/>
+                <Entry Placeholder="Enter username" x:Name="txtUsername" />
+                <Label Text="Password" x:Name="lblPassword"/>
+                <Entry Placeholder="Enter password" IsPassword="True" x:Name="txtPassword"/>
+                <Button Text="Login" x:Name="btnLogin"></Button>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

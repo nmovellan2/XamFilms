@@ -3,8 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamFilm.Views.MenuView"
              Title="Master">
-  <StackLayout>
-    <ListView x:Name="MenuItemsListView"
+    <StackLayout>
+        <StackLayout>
+            <!--Cabecera-->
+            <Grid BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Source="XamaFilm.png" Grid.Column="0" Grid.Row="0"/>
+                <Label Text="XamaFilm" HorizontalTextAlignment="Center" FontSize="Large" Grid.Column="0" Grid.Row="1"/>
+            </Grid>
+            <!--Opciones-->
+            <Grid x:Name="GrdOptions" Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <!--Fila 0-->
+                <Image Source="movie_menu.png" Grid.Column="0" Grid.Row="0"/>
+                <Label Text="Movies" Grid.Column="1" Grid.Row="0" FontSize="Medium" />
+                <!--Fila 1-->
+                <Image Source="serie_menu.png" Grid.Column="0" Grid.Row="1"/>
+                <Label Text="Series" Grid.Column="1" Grid.Row="1" FontSize="Medium" />
+                <!--Fila 0-->
+                <Image Source="watchlist_menu.png" Grid.Column="0" Grid.Row="2"/>
+                <Label Text="watchilist" Grid.Column="1" Grid.Row="2" FontSize="Medium" />
+                <!--Fila 0-->
+                <Image Source="favorites_menu.png" Grid.Column="0" Grid.Row="3"/>
+                <Label Text="Movies" Grid.Column="1" Grid.Row="3" FontSize="Medium" />
+                <!--Fila 0-->
+                <Image Source="settings_menu.png" Grid.Column="0" Grid.Row="4"/>
+                <Label Text="settings" Grid.Column="1" Grid.Row="4" FontSize="Medium" />
+                <!--Fila 0-->
+                <Image Source="logout_menu.png" Grid.Column="0" Grid.Row="5"/>
+                <Label Text="logout" Grid.Column="1" Grid.Row="5" FontSize="Medium" />
+            </Grid>
+        </StackLayout>
+    <!--<ListView x:Name="MenuItemsListView"
               SeparatorVisibility="None"
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">
@@ -13,7 +57,6 @@
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="10"/>
           </Grid.ColumnDefinitions>
           <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -24,7 +67,7 @@
           <Label
               Grid.Column="1"
               Grid.Row="2"
-              Text="AppName"
+              Text="AppName.."
               Style="{DynamicResource SubtitleStyle}"/>
         </Grid>
       </ListView.Header>
@@ -40,6 +83,6 @@
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
-    </ListView>
+    </ListView>-->
   </StackLayout>
 </ContentPage>

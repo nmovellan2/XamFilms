@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamFilm.Views.DetailEpisodeView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout x:Name="stkContainer" Padding="20">
+                <Label x:Name="lblTitleEpisode" FontAttributes ="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <Image Source="" x:Name="imgEpisode"/>
+                <Label Text="General" x:Name="lblSinopsis" FontAttributes ="Bold"/>
+                <Label x:Name="lblContenidoSinopsis"/>
+                <Label x:Name="lblReparto" Text="Reparto" FontAttributes ="Bold"/>
+                <Label x:Name="lblContenidoReparto"/>
+                <Label x:Name="lblCountry" Text="Country" FontAttributes ="Bold"/>
+                <Label x:Name="lblContenidoCountry"/>
+                <Label x:Name="lblWriter" Text="Writer" FontAttributes ="Bold"/>
+                <Label x:Name="lblContenidoWriter"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
