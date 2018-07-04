@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamFilm.Views.HomeView"
              Title="Detail">
-    <ContentPage Title="Movies" Icon="Movie.png"/>
-    <ContentPage Title="Series" Icon="Serie.png"/>
+    <ContentPage Title="Movies" Icon="Movie.png">
+        
+    </ContentPage>
+    <ContentPage Title="Series" Icon="Serie.png">
+        
+    </ContentPage>
 </TabbedPage>
