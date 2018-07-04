@@ -12,7 +12,7 @@ namespace XamFilm
             LiveReload.Init();//Para poder utilizar Live Reload
 			InitializeComponent();
 
-			MainPage = new Views.SettingsPageView();
+			MainPage = new Views.AcknowledgeView();
 		}
 
 		protected override void OnStart ()
